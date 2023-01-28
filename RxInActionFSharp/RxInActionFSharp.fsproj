@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+    <GenerateProgramFile>false</GenerateProgramFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Dir.fs" />
+    <Compile Include="NumbersObservable.fs" />
+    <Compile Include="ConsoleObserver.fs" />
+    <Compile Include="IChatConnection.fs" />
+    <Compile Include="ObservableConnection.fs" />
+    <Compile Include="ObserveNumbers.fs" />
+    <Compile Include="ObserveMessagesDeferred.fs" />
+    <Compile Include="WifiScanner.fs" />
+    <Compile Include="ExtendedWifiScanner.fs" />
+    <Compile Include="UnitWifiScanner.fs" />
+    <Compile Include="NumbersAndThrow.fs" />
+    <Compile Include="ToEnumerable.fs" />
+    <Compile Include="ToDictionary.fs" />
+    <Compile Include="ToLookup.fs" />
+    <Compile Include="Generate.fs" />
+    <Compile Include="Range.fs" />
+    <Compile Include="ReadLine.fs" />
+    <Compile Include="Using.fs" />
+    <Compile Include="PrimitiveObservables.fs" />
+    <Compile Include="MagicalPrimeGenerator.fs" />
+    <Compile Include="Search.fs" />
+    <Compile Include="FlatMap.fs" />
+    <Compile Include="TimerSwitch.fs" />
+    <Compile Include="CreatingObservers.fs" />
+    <Compile Include="DelaySubscription.fs" />
+    <Compile Include="Subject.fs" />
+    <Compile Include="BankAccount.fs" />
+    <Compile Include="Temperature.fs" />
+    <Compile Include="Operators.fs" />
+    <Compile Include="Aggregating.fs" />
+    <Compile Include="Combination.fs" />
+    <Compile Include="DoorOpened.fs" />
+    <Compile Include="Buffering.fs" />
+    <Compile Include="Schedulers.fs" />
+    <Compile Include="UsingTimeBasedOperators.fs" />
+    <Compile Include="ObserveOnAndSubscribeOn.fs" />
+    <Compile Include="Synchronize.fs" />
+    <Compile Include="ReactingToErrors.fs" />
+    <Compile Include="AutoResetEvent.fs" />
+    <Compile Include="Concurrency.fs" />
+    <Compile Include="AsyncBasics.fs" />
+    <Compile Include="ReactiveBasics.fs" />
+    <Compile Include="Interop.fs" />
+    <Compile Include="Cancellation.fs" />
+    <Compile Include="CountdownEvent.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Control.Reactive" Version="5.0.5" />
+    <PackageReference Include="FSharp.xUnit" Version="1.2.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Reactive" Version="5.0.0" />
+    <PackageReference Include="System.Reactive.Observable.Aliases" Version="5.0.0" />
+    <PackageReference Include="xunit" Version="2.4.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.2.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
